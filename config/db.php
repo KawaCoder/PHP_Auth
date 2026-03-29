@@ -16,10 +16,12 @@ class Database
     {
         if (self::$pdo === null) {
             try {
-                $server = '127.0.0.1';
-                $db = 'PHP_Rugby_Auth'; // Base de données distincte !
-                $login = 'root';
-                $mdp = '';
+                require_once __DIR__ . '/env.php';
+
+                $server = DB_HOST_AUTH;
+                $db = DB_NAME_AUTH; 
+                $login = DB_USER_AUTH;
+                $mdp = DB_PASSWORD_AUTH;
 
                 self::$pdo = new PDO("mysql:host=$server;dbname=$db;charset=utf8", $login, $mdp);
                 self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

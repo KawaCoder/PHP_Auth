@@ -1,9 +1,11 @@
 <?php
 namespace App\Utils;
 
+require_once __DIR__ . '/../config/env.php';
+
 class JWT
 {
-    private static $secret = 'MON_SUPER_SECRET_POUR_LE_PROJET_R401_WxyZ123!_Rugby';
+    private static $secret = JWT_SECRET;
 
     /**
      * Génère un JWT
