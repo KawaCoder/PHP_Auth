@@ -4,7 +4,7 @@
 
 // -- BASE DE DONNÉES AUTH (AlwaysData) --
 define('DB_HOST_AUTH', 'mysql-authhh.alwaysdata.net');
-define('DB_NAME_AUTH', 'authhh');
+define('DB_NAME_AUTH', 'authhh_db');
 define('DB_USER_AUTH', 'authhh');
 define('DB_PASSWORD_AUTH', '!UBq69!G2rel');
 
